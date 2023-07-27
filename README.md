@@ -1,6 +1,8 @@
 ERD Maker
 ========
 
+![Screenshot_20230727_225535](https://github.com/leledumbo/erdmaker/assets/270400/2f39c4e8-94f0-4fd9-a537-ccb368a42824)
+
 is a language, reference compiler and editor designed to create ER Diagram
 in Elmasri notation from a textual representation. The compiler will output
 GraphViz source code, which can then be compiled by GraphViz (either by the

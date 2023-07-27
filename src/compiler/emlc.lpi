@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="12"/>
+    <PathDelim Value="\"/>
+    <General>
+      <Flags>
+        <MainUnitHasCreateFormStatements Value="False"/>
+        <MainUnitHasTitleStatement Value="False"/>
+        <CompatibilityMode Value="True"/>
+      </Flags>
+      <UseAppBundle Value="False"/>
+    </General>
+    <i18n>
+      <EnableI18N LFM="False"/>
+    </i18n>
+    <BuildModes Count="6" Active="Debug">
+      <Item1 Name="Debug" Default="True"/>
+      <Item2 Name="Release">
+        <CompilerOptions>
+          <Version Value="11"/>
+          <Target>
+            <Filename Value="../../bin/$TargetCPU()-$TargetOS()/$NameOnly($ProjFile())$(EXEExt)"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="$(ProjOutDir)"/>
+            <UnitOutputDirectory Value="../../lib/$(TargetCPU)-$(TargetOS)"/>
+          </SearchPaths>
+          <Parsing>
+            <Style Value="1"/>
+            <SyntaxOptions>
+              <CStyleOperator Value="False"/>
+              <UseAnsiStrings Value="False"/>
+            </SyntaxOptions>
+          </Parsing>
+          <CodeGeneration>
+            <SmartLinkUnit Value="True"/>
+            <Optimizations>
+              <OptimizationLevel Value="3"/>
+            </Optimizations>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <GenerateDebugInfo Value="False"/>
+              <StripSymbols Value="True"/>
+            </Debugging>
+            <LinkSmart Value="True"/>
+          </Linking>
+          <Other>
+            <WriteFPCLogo Value="False"/>
+            <ExecuteBefore>
+              <CompileReasons Compile="False" Build="False" Run="False"/>
+            </ExecuteBefore>
+            <ExecuteAfter>
+              <CompileReasons Compile="False" Build="False" Run="False"/>
+            </ExecuteAfter>
+          </Other>
+          <CompileReasons Run="False"/>
+        </CompilerOptions>
+      </Item2>
+      <Item3 Name="Release i386-linux">
+        <CompilerOptions>
+          <Version Value="11"/>
+          <Target>
+            <Filename Value="../../bin/$TargetCPU()-$TargetOS()/$NameOnly($ProjFile())$(EXEExt)"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="$(ProjOutDir)"/>
+            <UnitOutputDirectory Value="../../lib/$(TargetCPU)-$(TargetOS)"/>
+          </SearchPaths>
+          <Parsing>
+            <Style Value="1"/>
+            <SyntaxOptions>
+              <CStyleOperator Value="False"/>
+              <UseAnsiStrings Value="False"/>
+            </SyntaxOptions>
+          </Parsing>
+          <CodeGeneration>
+            <SmartLinkUnit Value="True"/>
+            <TargetCPU Value="i386"/>
+            <TargetOS Value="linux"/>
+            <Optimizations>
+              <OptimizationLevel Value="3"/>
+            </Optimizations>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <GenerateDebugInfo Value="False"/>
+              <StripSymbols Value="True"/>
+            </Debugging>
+            <LinkSmart Value="True"/>
+          </Linking>
+          <Other>
+            <WriteFPCLogo Value="False"/>
+            <ExecuteBefore>
+              <CompileReasons Compile="False" Build="False" Run="False"/>
+            </ExecuteBefore>
+            <ExecuteAfter>
+              <CompileReasons Compile="False" Build="False" Run="False"/>
+            </ExecuteAfter>
+          </Other>
+          <CompileReasons Run="False"/>
+        </CompilerOptions>
+      </Item3>
+      <Item4 Name="Release x86_64-linux">
+        <CompilerOptions>
+          <Version Value="11"/>
+          <Target>
+            <Filename Value="../../bin/$TargetCPU()-$TargetOS()/$NameOnly($ProjFile())$(EXEExt)"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="$(ProjOutDir)"/>
+            <UnitOutputDirectory Value="../../lib/$(TargetCPU)-$(TargetOS)"/>
+          </SearchPaths>
+          <Parsing>
+            <Style Value="1"/>
+            <SyntaxOptions>
+              <CStyleOperator Value="False"/>
+              <UseAnsiStrings Value="False"/>
+            </SyntaxOptions>
+          </Parsing>
+          <CodeGeneration>
+            <SmartLinkUnit Value="True"/>
+            <TargetCPU Value="x86_64"/>
+            <TargetOS Value="linux"/>
+            <Optimizations>
+              <OptimizationLevel Value="3"/>
+            </Optimizations>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <GenerateDebugInfo Value="False"/>
+              <StripSymbols Value="True"/>
+            </Debugging>
+            <LinkSmart Value="True"/>
+          </Linking>
+          <Other>
+            <WriteFPCLogo Value="False"/>
+            <ExecuteBefore>
+              <CompileReasons Compile="False" Build="False" Run="False"/>
+            </ExecuteBefore>
+            <ExecuteAfter>
+              <CompileReasons Compile="False" Build="False" Run="False"/>
+            </ExecuteAfter>
+          </Other>
+          <CompileReasons Run="False"/>
+        </CompilerOptions>
+      </Item4>
+      <Item5 Name="Release i386-win32">
+        <CompilerOptions>
+          <Version Value="11"/>
+          <Target>
+            <Filename Value="../../bin/$TargetCPU()-$TargetOS()/$NameOnly($ProjFile())$(EXEExt)"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="$(ProjOutDir)"/>
+            <UnitOutputDirectory Value="../../lib/$(TargetCPU)-$(TargetOS)"/>
+          </SearchPaths>
+          <Parsing>
+            <Style Value="1"/>
+            <SyntaxOptions>
+              <CStyleOperator Value="False"/>
+              <UseAnsiStrings Value="False"/>
+            </SyntaxOptions>
+          </Parsing>
+          <CodeGeneration>
+            <SmartLinkUnit Value="True"/>
+            <TargetCPU Value="i386"/>
+            <TargetOS Value="win32"/>
+            <Optimizations>
+              <OptimizationLevel Value="3"/>
+            </Optimizations>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <GenerateDebugInfo Value="False"/>
+              <StripSymbols Value="True"/>
+            </Debugging>
+            <LinkSmart Value="True"/>
+          </Linking>
+          <Other>
+            <WriteFPCLogo Value="False"/>
+            <ExecuteBefore>
+              <CompileReasons Compile="False" Build="False" Run="False"/>
+            </ExecuteBefore>
+            <ExecuteAfter>
+              <CompileReasons Compile="False" Build="False" Run="False"/>
+            </ExecuteAfter>
+          </Other>
+          <CompileReasons Run="False"/>
+        </CompilerOptions>
+      </Item5>
+      <Item6 Name="Release x86_64-win64">
+        <CompilerOptions>
+          <Version Value="11"/>
+          <Target>
+            <Filename Value="../../bin/$TargetCPU()-$TargetOS()/$NameOnly($ProjFile())$(EXEExt)"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="$(ProjOutDir)"/>
+            <UnitOutputDirectory Value="../../lib/$(TargetCPU)-$(TargetOS)"/>
+          </SearchPaths>
+          <Parsing>
+            <Style Value="1"/>
+            <SyntaxOptions>
+              <CStyleOperator Value="False"/>
+              <UseAnsiStrings Value="False"/>
+            </SyntaxOptions>
+          </Parsing>
+          <CodeGeneration>
+            <SmartLinkUnit Value="True"/>
+            <TargetCPU Value="x86_64"/>
+            <TargetOS Value="win64"/>
+            <Optimizations>
+              <OptimizationLevel Value="3"/>
+            </Optimizations>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <GenerateDebugInfo Value="False"/>
+              <StripSymbols Value="True"/>
+            </Debugging>
+            <LinkSmart Value="True"/>
+          </Linking>
+          <Other>
+            <WriteFPCLogo Value="False"/>
+            <ExecuteBefore>
+              <CompileReasons Compile="False" Build="False" Run="False"/>
+            </ExecuteBefore>
+            <ExecuteAfter>
+              <CompileReasons Compile="False" Build="False" Run="False"/>
+            </ExecuteAfter>
+          </Other>
+          <CompileReasons Run="False"/>
+        </CompilerOptions>
+      </Item6>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <CommandLineParams Value="-i ..\..\sample.eml"/>
+        <LaunchingApplication PathPlusParams="C:\Windows\system32\cmd.exe \C pause"/>
+      </local>
+      <FormatVersion Value="2"/>
+      <Modes Count="1">
+        <Mode0 Name="default">
+          <local>
+            <CommandLineParams Value="-i ..\..\sample.eml"/>
+            <LaunchingApplication PathPlusParams="C:\Windows\system32\cmd.exe \C pause"/>
+          </local>
+        </Mode0>
+      </Modes>
+    </RunParams>
+    <Units Count="30">
+      <Unit0>
+        <Filename Value="emlc.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="12"/>
+        <CursorPos X="19" Y="14"/>
+        <UsageCount Value="96"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="README.txt"/>
+        <CursorPos Y="5"/>
+        <UsageCount Value="93"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="emllexer.pp"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="193"/>
+        <CursorPos Y="143"/>
+        <UsageCount Value="96"/>
+        <Loaded Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="emlparser.pp"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="196"/>
+        <CursorPos X="29" Y="52"/>
+        <UsageCount Value="96"/>
+        <Loaded Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="ERDMaker Language.txt"/>
+        <UsageCount Value="13"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="E:\Sources\lazarus-fpc\fpcbuild\fpcsrc\rtl\win32\classes.pp"/>
+        <UsageCount Value="3"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="E:\Sources\lazarus-fpc\fpcbuild\fpcsrc\rtl\objpas\classes\classesh.inc"/>
+        <TopLine Value="836"/>
+        <CursorPos X="3" Y="839"/>
+        <UsageCount Value="6"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="E:\Sources\lazarus-fpc\fpcbuild\fpcsrc\rtl\objpas\fgl.pp"/>
+        <TopLine Value="249"/>
+        <CursorPos X="9" Y="255"/>
+        <UsageCount Value="9"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="error.txt"/>
+        <TopLine Value="3"/>
+        <CursorPos X="12" Y="3"/>
+        <UsageCount Value="4"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="ERD Maker Language.txt"/>
+        <CursorPos Y="11"/>
+        <UsageCount Value="93"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="CHANGELOG.txt"/>
+        <UsageCount Value="93"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="..\Downloads\fpcbuild\fpcsrc\packages\fcl-base\src\contnrs.pp"/>
+        <TopLine Value="20"/>
+        <CursorPos X="19" Y="31"/>
+        <UsageCount Value="3"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="sample.eml"/>
+        <CursorPos X="2" Y="11"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="emlast.pp"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="4"/>
+        <CursorPos X="9" Y="25"/>
+        <UsageCount Value="95"/>
+        <Loaded Value="True"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="D:\UniServer\www\lakip\application\config\database.php"/>
+        <TopLine Value="11"/>
+        <CursorPos X="29" Y="23"/>
+        <UsageCount Value="3"/>
+        <DefaultSyntaxHighlighter Value="PHP"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="D:\X-Lazarus\Bin\Lazarus\fpc\source\rtl\objpas\fgl.pp"/>
+        <TopLine Value="127"/>
+        <CursorPos X="7" Y="143"/>
+        <UsageCount Value="4"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="utils.pp"/>
+        <IsPartOfProject Value="True"/>
+        <CursorPos Y="9"/>
+        <UsageCount Value="87"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="sample.trc"/>
+        <UsageCount Value="6"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="cmdopts.pp"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="87"/>
+        <CursorPos X="29" Y="67"/>
+        <UsageCount Value="68"/>
+        <Loaded Value="True"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="E:\Sources\lazarus-fpc\fpcbuild\fpcsrc\rtl\win32\system.pp"/>
+        <TopLine Value="47"/>
+        <CursorPos X="3" Y="59"/>
+        <UsageCount Value="6"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="E:\Sources\lazarus-fpc\fpcbuild\fpcsrc\rtl\inc\objpash.inc"/>
+        <TopLine Value="180"/>
+        <CursorPos X="23" Y="192"/>
+        <UsageCount Value="6"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="..\X-Lazarus\Bin\Lazarus\fpc\bin\i386-win32\fpc.cfg"/>
+        <TopLine Value="148"/>
+        <CursorPos X="39" Y="158"/>
+        <UsageCount Value="8"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="D:\X-Lazarus\Bin\Lazarus\fpc\source\rtl\inc\objpash.inc"/>
+        <TopLine Value="185"/>
+        <CursorPos X="21" Y="201"/>
+        <UsageCount Value="9"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="emlcopt.pp"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="76"/>
+        <CursorPos X="44" Y="85"/>
+        <UsageCount Value="46"/>
+        <Loaded Value="True"/>
+      </Unit23>
+      <Unit24>
+        <Filename Value="sample.err"/>
+        <CursorPos X="21" Y="14"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit24>
+      <Unit25>
+        <Filename Value="-o"/>
+        <UsageCount Value="9"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit25>
+      <Unit26>
+        <Filename Value="bin\i386-win32\sample.eml"/>
+        <CursorPos X="4" Y="10"/>
+        <UsageCount Value="9"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit26>
+      <Unit27>
+        <Filename Value="emlerrors.pp"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="34"/>
+        <CursorPos Y="27"/>
+        <UsageCount Value="41"/>
+        <Loaded Value="True"/>
+      </Unit27>
+      <Unit28>
+        <Filename Value="..\..\..\..\..\..\LinuxShared\fpc\source\rtl\inc\objpash.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="237"/>
+        <CursorPos X="20" Y="246"/>
+        <UsageCount Value="10"/>
+      </Unit28>
+      <Unit29>
+        <Filename Value="..\..\..\..\..\..\LinuxShared\fpc\source\packages\fcl-base\src\streamio.pp"/>
+        <UnitName Value="StreamIO"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="23" Y="25"/>
+        <UsageCount Value="10"/>
+      </Unit29>
+    </Units>
+    <JumpHistory Count="30" HistoryIndex="29">
+      <Position1>
+        <Filename Value="emllexer.pp"/>
+        <Caret Line="129" TopLine="118"/>
+      </Position1>
+      <Position2>
+        <Filename Value="emllexer.pp"/>
+        <Caret Line="186" TopLine="175"/>
+      </Position2>
+      <Position3>
+        <Filename Value="emllexer.pp"/>
+        <Caret Line="185" TopLine="175"/>
+      </Position3>
+      <Position4>
+        <Filename Value="emllexer.pp"/>
+        <Caret Line="115" TopLine="103"/>
+      </Position4>
+      <Position5>
+        <Filename Value="emllexer.pp"/>
+        <Caret Line="120" TopLine="103"/>
+      </Position5>
+      <Position6>
+        <Filename Value="emllexer.pp"/>
+        <Caret Line="129" TopLine="118"/>
+      </Position6>
+      <Position7>
+        <Filename Value="emllexer.pp"/>
+        <Caret Line="184" Column="15" TopLine="175"/>
+      </Position7>
+      <Position8>
+        <Filename Value="emllexer.pp"/>
+        <Caret Line="185" TopLine="175"/>
+      </Position8>
+      <Position9>
+        <Filename Value="emllexer.pp"/>
+        <Caret Line="115" TopLine="103"/>
+      </Position9>
+      <Position10>
+        <Filename Value="emllexer.pp"/>
+        <Caret Line="120" TopLine="103"/>
+      </Position10>
+      <Position11>
+        <Filename Value="emllexer.pp"/>
+        <Caret Line="129" TopLine="118"/>
+      </Position11>
+      <Position12>
+        <Filename Value="emllexer.pp"/>
+        <Caret Line="186" TopLine="175"/>
+      </Position12>
+      <Position13>
+        <Filename Value="emllexer.pp"/>
+        <Caret Line="185" TopLine="175"/>
+      </Position13>
+      <Position14>
+        <Filename Value="emllexer.pp"/>
+        <Caret Line="115" TopLine="103"/>
+      </Position14>
+      <Position15>
+        <Filename Value="emllexer.pp"/>
+        <Caret Line="120" TopLine="103"/>
+      </Position15>
+      <Position16>
+        <Filename Value="emllexer.pp"/>
+        <Caret Line="129" TopLine="118"/>
+      </Position16>
+      <Position17>
+        <Filename Value="emllexer.pp"/>
+        <Caret Line="186" TopLine="175"/>
+      </Position17>
+      <Position18>
+        <Filename Value="emllexer.pp"/>
+        <Caret Line="185" TopLine="175"/>
+      </Position18>
+      <Position19>
+        <Filename Value="emllexer.pp"/>
+        <Caret Line="115" TopLine="103"/>
+      </Position19>
+      <Position20>
+        <Filename Value="emllexer.pp"/>
+        <Caret Line="120" TopLine="103"/>
+      </Position20>
+      <Position21>
+        <Filename Value="emllexer.pp"/>
+        <Caret Line="129" TopLine="118"/>
+      </Position21>
+      <Position22>
+        <Filename Value="emllexer.pp"/>
+        <Caret Line="186" TopLine="175"/>
+      </Position22>
+      <Position23>
+        <Filename Value="emllexer.pp"/>
+        <Caret Line="185" TopLine="175"/>
+      </Position23>
+      <Position24>
+        <Filename Value="emllexer.pp"/>
+        <Caret Line="115" TopLine="103"/>
+      </Position24>
+      <Position25>
+        <Filename Value="emllexer.pp"/>
+        <Caret Line="120" TopLine="103"/>
+      </Position25>
+      <Position26>
+        <Filename Value="emllexer.pp"/>
+        <Caret Line="129" TopLine="118"/>
+      </Position26>
+      <Position27>
+        <Filename Value="emllexer.pp"/>
+        <Caret Line="186" TopLine="175"/>
+      </Position27>
+      <Position28>
+        <Filename Value="emllexer.pp"/>
+        <Caret Line="185" TopLine="175"/>
+      </Position28>
+      <Position29>
+        <Filename Value="emllexer.pp"/>
+        <Caret Line="115" TopLine="103"/>
+      </Position29>
+      <Position30>
+        <Filename Value="emllexer.pp"/>
+        <Caret Line="120" TopLine="103"/>
+      </Position30>
+    </JumpHistory>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <Target>
+      <Filename Value="../../bin/$TargetCPU()-$TargetOS()/$NameOnly($ProjFile())$(EXEExt)"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <UnitOutputDirectory Value="../../lib/$(TargetCPU)-$(TargetOS)"/>
+    </SearchPaths>
+    <Parsing>
+      <Style Value="1"/>
+      <SyntaxOptions>
+        <CStyleOperator Value="False"/>
+        <IncludeAssertionCode Value="True"/>
+        <UseAnsiStrings Value="False"/>
+      </SyntaxOptions>
+    </Parsing>
+    <CodeGeneration>
+      <Checks>
+        <IOChecks Value="True"/>
+        <RangeChecks Value="True"/>
+        <OverflowChecks Value="True"/>
+        <StackChecks Value="True"/>
+      </Checks>
+      <Optimizations>
+        <OptimizationLevel Value="0"/>
+      </Optimizations>
+    </CodeGeneration>
+    <Linking>
+      <Debugging>
+        <DebugInfoType Value="dsDwarf2Set"/>
+        <UseHeaptrc Value="True"/>
+      </Debugging>
+    </Linking>
+    <Other>
+      <WriteFPCLogo Value="False"/>
+      <ExecuteBefore>
+        <CompileReasons Compile="False" Build="False" Run="False"/>
+      </ExecuteBefore>
+      <ExecuteAfter>
+        <CompileReasons Compile="False" Build="False" Run="False"/>
+      </ExecuteAfter>
+    </Other>
+    <CompileReasons Run="False"/>
+  </CompilerOptions>
+  <Debugging>
+    <Watches Count="2">
+      <Item1>
+        <Expression Value="FLineBuf"/>
+      </Item1>
+      <Item2>
+        <Expression Value="FLook"/>
+      </Item2>
+    </Watches>
+    <Exceptions Count="3">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

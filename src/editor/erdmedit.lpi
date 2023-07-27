@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="12"/>
+    <General>
+      <Flags>
+        <CompatibilityMode Value="True"/>
+      </Flags>
+      <Title Value="erdmedit"/>
+      <UseAppBundle Value="False"/>
+      <ResourceType Value="res"/>
+      <UseXPManifest Value="True"/>
+    </General>
+    <i18n>
+      <EnableI18N LFM="False"/>
+    </i18n>
+    <BuildModes Count="6" Active="Debug">
+      <Item1 Name="Debug" Default="True"/>
+      <Item2 Name="Release">
+        <CompilerOptions>
+          <Version Value="11"/>
+          <Target>
+            <Filename Value="../../bin/$(TargetCPU)-$(TargetOS)/$NameOnly($ProjFile())$(EXEExt)"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="$(ProjOutDir)"/>
+            <OtherUnitFiles Value="src"/>
+            <UnitOutputDirectory Value="../../lib/$(TargetCPU)-$(TargetOS)"/>
+          </SearchPaths>
+          <CodeGeneration>
+            <SmartLinkUnit Value="True"/>
+            <Optimizations>
+              <OptimizationLevel Value="3"/>
+            </Optimizations>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <GenerateDebugInfo Value="False"/>
+              <StripSymbols Value="True"/>
+            </Debugging>
+            <LinkSmart Value="True"/>
+            <Options>
+              <Win32>
+                <GraphicApplication Value="True"/>
+              </Win32>
+            </Options>
+          </Linking>
+        </CompilerOptions>
+      </Item2>
+      <Item3 Name="Release i386-linux">
+        <CompilerOptions>
+          <Version Value="11"/>
+          <Target>
+            <Filename Value="../../bin/$(TargetCPU)-$(TargetOS)/$NameOnly($ProjFile())$(EXEExt)"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="$(ProjOutDir)"/>
+            <OtherUnitFiles Value="src"/>
+            <UnitOutputDirectory Value="../../lib/$(TargetCPU)-$(TargetOS)"/>
+          </SearchPaths>
+          <CodeGeneration>
+            <SmartLinkUnit Value="True"/>
+            <TargetCPU Value="i386"/>
+            <TargetOS Value="linux"/>
+            <Optimizations>
+              <OptimizationLevel Value="3"/>
+            </Optimizations>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <GenerateDebugInfo Value="False"/>
+              <StripSymbols Value="True"/>
+            </Debugging>
+            <LinkSmart Value="True"/>
+            <Options>
+              <Win32>
+                <GraphicApplication Value="True"/>
+              </Win32>
+            </Options>
+          </Linking>
+        </CompilerOptions>
+      </Item3>
+      <Item4 Name="Release x86_64-linux">
+        <CompilerOptions>
+          <Version Value="11"/>
+          <Target>
+            <Filename Value="../../bin/$(TargetCPU)-$(TargetOS)/$NameOnly($ProjFile())$(EXEExt)"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="$(ProjOutDir)"/>
+            <OtherUnitFiles Value="src"/>
+            <UnitOutputDirectory Value="../../lib/$(TargetCPU)-$(TargetOS)"/>
+          </SearchPaths>
+          <CodeGeneration>
+            <SmartLinkUnit Value="True"/>
+            <TargetCPU Value="x86_64"/>
+            <TargetOS Value="linux"/>
+            <Optimizations>
+              <OptimizationLevel Value="3"/>
+            </Optimizations>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <GenerateDebugInfo Value="False"/>
+              <StripSymbols Value="True"/>
+            </Debugging>
+            <LinkSmart Value="True"/>
+            <Options>
+              <Win32>
+                <GraphicApplication Value="True"/>
+              </Win32>
+            </Options>
+          </Linking>
+        </CompilerOptions>
+      </Item4>
+      <Item5 Name="Release i386-win32">
+        <MacroValues Count="1">
+          <Macro1 Name="LCLWidgetType" Value="win32"/>
+        </MacroValues>
+        <CompilerOptions>
+          <Version Value="11"/>
+          <Target>
+            <Filename Value="../../bin/$(TargetCPU)-$(TargetOS)/$NameOnly($ProjFile())$(EXEExt)"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="$(ProjOutDir)"/>
+            <OtherUnitFiles Value="src"/>
+            <UnitOutputDirectory Value="../../lib/$(TargetCPU)-$(TargetOS)"/>
+          </SearchPaths>
+          <CodeGeneration>
+            <SmartLinkUnit Value="True"/>
+            <TargetCPU Value="i386"/>
+            <TargetOS Value="win32"/>
+            <Optimizations>
+              <OptimizationLevel Value="3"/>
+            </Optimizations>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <GenerateDebugInfo Value="False"/>
+              <StripSymbols Value="True"/>
+            </Debugging>
+            <LinkSmart Value="True"/>
+            <Options>
+              <Win32>
+                <GraphicApplication Value="True"/>
+              </Win32>
+            </Options>
+          </Linking>
+        </CompilerOptions>
+      </Item5>
+      <Item6 Name="Release x86_64-win64">
+        <MacroValues Count="1">
+          <Macro1 Name="LCLWidgetType" Value="win32"/>
+        </MacroValues>
+        <CompilerOptions>
+          <Version Value="11"/>
+          <Target>
+            <Filename Value="../../bin/$(TargetCPU)-$(TargetOS)/$NameOnly($ProjFile())$(EXEExt)"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="$(ProjOutDir)"/>
+            <OtherUnitFiles Value="src"/>
+            <UnitOutputDirectory Value="../../lib/$(TargetCPU)-$(TargetOS)"/>
+          </SearchPaths>
+          <CodeGeneration>
+            <SmartLinkUnit Value="True"/>
+            <TargetCPU Value="x86_64"/>
+            <TargetOS Value="win64"/>
+            <Optimizations>
+              <OptimizationLevel Value="3"/>
+            </Optimizations>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <GenerateDebugInfo Value="False"/>
+              <StripSymbols Value="True"/>
+            </Debugging>
+            <LinkSmart Value="True"/>
+            <Options>
+              <Win32>
+                <GraphicApplication Value="True"/>
+              </Win32>
+            </Options>
+          </Linking>
+        </CompilerOptions>
+      </Item6>
+      <SharedMatrixOptions Count="1">
+        <Item1 ID="772274739066" Modes="Release i386-win32,Release x86_64-win64" Type="IDEMacro" MacroName="LCLWidgetType" Value="win32"/>
+      </SharedMatrixOptions>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="1">
+        <Mode0 Name="default"/>
+      </Modes>
+    </RunParams>
+    <RequiredPackages Count="2">
+      <Item1>
+        <PackageName Value="SynEdit"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="LCL"/>
+      </Item2>
+    </RequiredPackages>
+    <Units Count="12">
+      <Unit0>
+        <Filename Value="erdmedit.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="ERDMedit"/>
+        <CursorPos Y="4"/>
+        <UsageCount Value="35"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="formmain.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="MainForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="FormMain"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="139"/>
+        <CursorPos X="26" Y="149"/>
+        <UsageCount Value="35"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="synerdmakersyn.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="SynERDMakerSyn"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="175"/>
+        <CursorPos Y="184"/>
+        <UsageCount Value="34"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="compproc.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="CompProc"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="134"/>
+        <CursorPos X="33" Y="135"/>
+        <UsageCount Value="24"/>
+        <Loaded Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="../../../../../../LinuxShared/lazarus-svn/components/synedit/synedithighlighter.pp"/>
+        <UnitName Value="SynEditHighlighter"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="376"/>
+        <CursorPos X="26" Y="388"/>
+        <UsageCount Value="9"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="../../../../../../LinuxShared/fpc/source/rtl/objpas/classes/classesh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="963"/>
+        <CursorPos X="17" Y="982"/>
+        <UsageCount Value="10"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="../../../../../../LinuxShared/fpc/source/rtl/objpas/classes/classes.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="241"/>
+        <CursorPos X="3" Y="243"/>
+        <UsageCount Value="10"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="../../../../../../LinuxShared/lazarus-svn/lcl/actnlist.pas"/>
+        <UnitName Value="ActnList"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="102"/>
+        <CursorPos X="3" Y="123"/>
+        <UsageCount Value="10"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="../../../../../../LinuxShared/lazarus-svn/lcl/inipropstorage.pas"/>
+        <UnitName Value="IniPropStorage"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="94"/>
+        <CursorPos Y="107"/>
+        <UsageCount Value="10"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="../../../../../../LinuxShared/fpc/source/packages/fcl-process/src/process.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="14"/>
+        <CursorPos X="46" Y="26"/>
+        <UsageCount Value="10"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="../../../../../../LinuxShared/fpc/source/packages/fcl-process/src/pipes.pp"/>
+        <UnitName Value="Pipes"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="30"/>
+        <CursorPos X="16" Y="42"/>
+        <UsageCount Value="10"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="../../../../../../LinuxShared/fpc/source/rtl/objpas/classes/streams.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="742"/>
+        <CursorPos X="3" Y="747"/>
+        <UsageCount Value="10"/>
+      </Unit11>
+    </Units>
+    <JumpHistory Count="30" HistoryIndex="29">
+      <Position1>
+        <Filename Value="formmain.pas"/>
+        <Caret Line="30" Column="5" TopLine="19"/>
+      </Position1>
+      <Position2>
+        <Filename Value="formmain.pas"/>
+        <Caret Line="102" Column="17" TopLine="87"/>
+      </Position2>
+      <Position3>
+        <Filename Value="formmain.pas"/>
+        <Caret Line="163" Column="17" TopLine="144"/>
+      </Position3>
+      <Position4>
+        <Filename Value="formmain.pas"/>
+        <Caret Line="59" Column="54" TopLine="46"/>
+      </Position4>
+      <Position5>
+        <Filename Value="formmain.pas"/>
+        <Caret Line="169" Column="7" TopLine="150"/>
+      </Position5>
+      <Position6>
+        <Filename Value="compproc.pas"/>
+        <Caret Line="38" Column="30" TopLine="28"/>
+      </Position6>
+      <Position7>
+        <Filename Value="compproc.pas"/>
+        <Caret Line="71" Column="15" TopLine="55"/>
+      </Position7>
+      <Position8>
+        <Filename Value="compproc.pas"/>
+        <Caret Line="90" Column="11" TopLine="76"/>
+      </Position8>
+      <Position9>
+        <Filename Value="compproc.pas"/>
+        <Caret Line="80" Column="31" TopLine="68"/>
+      </Position9>
+      <Position10>
+        <Filename Value="compproc.pas"/>
+        <Caret Line="78" Column="6" TopLine="67"/>
+      </Position10>
+      <Position11>
+        <Filename Value="compproc.pas"/>
+        <Caret Line="83" Column="41" TopLine="70"/>
+      </Position11>
+      <Position12>
+        <Filename Value="compproc.pas"/>
+        <Caret Line="27" Column="44" TopLine="7"/>
+      </Position12>
+      <Position13>
+        <Filename Value="compproc.pas"/>
+        <Caret Line="26" Column="22" TopLine="16"/>
+      </Position13>
+      <Position14>
+        <Filename Value="compproc.pas"/>
+        <Caret Line="92" Column="6" TopLine="83"/>
+      </Position14>
+      <Position15>
+        <Filename Value="compproc.pas"/>
+        <Caret Line="86" Column="19" TopLine="86"/>
+      </Position15>
+      <Position16>
+        <Filename Value="formmain.pas"/>
+        <Caret Line="111" Column="49" TopLine="99"/>
+      </Position16>
+      <Position17>
+        <Filename Value="formmain.pas"/>
+        <Caret Line="171" Column="42" TopLine="168"/>
+      </Position17>
+      <Position18>
+        <Filename Value="compproc.pas"/>
+        <Caret Line="111" Column="10" TopLine="98"/>
+      </Position18>
+      <Position19>
+        <Filename Value="compproc.pas"/>
+        <Caret Line="104" Column="25" TopLine="100"/>
+      </Position19>
+      <Position20>
+        <Filename Value="compproc.pas"/>
+        <Caret Line="108" TopLine="100"/>
+      </Position20>
+      <Position21>
+        <Filename Value="compproc.pas"/>
+        <Caret Line="79" TopLine="68"/>
+      </Position21>
+      <Position22>
+        <Filename Value="formmain.pas"/>
+        <Caret Line="187" Column="48" TopLine="166"/>
+      </Position22>
+      <Position23>
+        <Filename Value="formmain.pas"/>
+        <Caret Line="188" Column="48" TopLine="167"/>
+      </Position23>
+      <Position24>
+        <Filename Value="formmain.pas"/>
+        <Caret Line="187" Column="48" TopLine="166"/>
+      </Position24>
+      <Position25>
+        <Filename Value="formmain.pas"/>
+        <Caret Line="188" Column="48" TopLine="167"/>
+      </Position25>
+      <Position26>
+        <Filename Value="formmain.pas"/>
+        <Caret Line="189" Column="48" TopLine="168"/>
+      </Position26>
+      <Position27>
+        <Filename Value="formmain.pas"/>
+        <Caret Line="188" Column="48" TopLine="167"/>
+      </Position27>
+      <Position28>
+        <Filename Value="formmain.pas"/>
+        <Caret Line="189" Column="48" TopLine="168"/>
+      </Position28>
+      <Position29>
+        <Filename Value="formmain.pas"/>
+        <Caret Line="190" Column="48" TopLine="169"/>
+      </Position29>
+      <Position30>
+        <Filename Value="formmain.pas"/>
+        <Caret Line="197" Column="48" TopLine="176"/>
+      </Position30>
+    </JumpHistory>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <Target>
+      <Filename Value="../../bin/$(TargetCPU)-$(TargetOS)/$NameOnly($ProjFile())$(EXEExt)"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <OtherUnitFiles Value="src"/>
+      <UnitOutputDirectory Value="../../lib/$(TargetCPU)-$(TargetOS)"/>
+    </SearchPaths>
+    <Parsing>
+      <SyntaxOptions>
+        <IncludeAssertionCode Value="True"/>
+      </SyntaxOptions>
+    </Parsing>
+    <CodeGeneration>
+      <Checks>
+        <IOChecks Value="True"/>
+        <RangeChecks Value="True"/>
+        <OverflowChecks Value="True"/>
+        <StackChecks Value="True"/>
+      </Checks>
+      <Optimizations>
+        <OptimizationLevel Value="0"/>
+      </Optimizations>
+    </CodeGeneration>
+    <Linking>
+      <Debugging>
+        <DebugInfoType Value="dsDwarf2Set"/>
+      </Debugging>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="3">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

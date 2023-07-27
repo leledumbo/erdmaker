@@ -1,0 +1,15 @@
+diagram 'My Library''s Schema' {
+  # id is primary key of every entity
+  entities {
+    users { id*, name, 'join date' }
+    books { id*, title, 'release date' }
+    authors { id*, name }
+  }
+  # This is an example of one to many
+  # and many to many relationships
+  relatonships {
+    1 users borrow 0,m books
+    m books 'written by' 1,n authors
+  }
+}
+
